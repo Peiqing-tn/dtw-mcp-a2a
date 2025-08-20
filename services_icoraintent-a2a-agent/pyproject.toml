@@ -1,0 +1,14 @@
+[project]
+name = "a2a-simple-mcp-agent"
+version = "0.1.0"
+description = "Simple A2A agent for network intent management via MCP cloud functions"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "a2a-sdk>=0.2.6",
+    "google-adk>=1.0.0",
+    "requests>=2.31.0",
+    "uvicorn>=0.24.0",
+    "click>=8.1.0",
+    "starlette>=0.27.0",
+]
