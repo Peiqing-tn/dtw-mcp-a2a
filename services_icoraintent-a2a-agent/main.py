@@ -295,7 +295,7 @@ workflow_test_skill = AgentSkill(
 agent_executor = SimpleMCPAgentExecutor()
 
 # Get the service URL dynamically
-SERVICE_URL = os.getenv('SERVICE_URL', 'https://icoraintent-a2a-agent-em3gbtthia-lz.a.run.app')
+SERVICE_URL = os.getenv('SERVICE_URL', 'https://{your_service_url}')
 
 agent_card = AgentCard(
     name='Intent MCP Agent A2A',

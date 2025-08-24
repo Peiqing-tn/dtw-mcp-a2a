@@ -46,6 +46,8 @@ To get started with this project, you'll need to deploy the three services to Go
 
 ### Deployment
 
+NOTE: Before making deployment change the parameters in the .env and URL links in source code files to your own.
+
 #### 1. Mock TMF921 Intent Management API
 
 ```bash

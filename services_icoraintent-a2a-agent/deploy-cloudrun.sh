@@ -29,7 +29,7 @@ if ! command -v gcloud &> /dev/null; then
 fi
 
 # Set your project ID here
-PROJECT="deep-ground-462419-k0"
+PROJECT="{your_project_id}"
 
 # Ensure gcloud is using the correct project
 gcloud config set project $PROJECT
@@ -46,8 +46,8 @@ echo "  Timeout: $TIMEOUT"
 echo
 
 # Set environment variables
-export MCP_FUNCTION_URL="https://europe-north1-deep-ground-462419-k0.cloudfunctions.net/icoraintent-mcp-fastmcp"
-export WIREMOCK_FUNCTION_URL="https://europe-north1-deep-ground-462419-k0.cloudfunctions.net/icoraintent-wiremock-fastapi"
+export MCP_FUNCTION_URL="https://{your_link_to_mcp}.cloudfunctions.net/icoraintent-mcp-fastmcp"
+export WIREMOCK_FUNCTION_URL="https://{your_link_to_wiremock}.cloudfunctions.net/icoraintent-wiremock-fastapi"
 
 # Prompt for Google API Key if not set
 if [ -z "$GOOGLE_API_KEY" ]; then

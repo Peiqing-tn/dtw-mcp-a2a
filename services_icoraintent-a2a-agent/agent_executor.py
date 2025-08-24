@@ -22,8 +22,8 @@ from a2a.utils import new_agent_text_message
 logger = logging.getLogger(__name__)
 
 # Configuration from environment
-MCP_FUNCTION_URL = os.getenv('MCP_FUNCTION_URL', 'https://europe-north1-deep-ground-462419-k0.cloudfunctions.net/icoraintent-mcp-fastmcp')
-WIREMOCK_FUNCTION_URL = os.getenv('WIREMOCK_FUNCTION_URL', 'https://europe-north1-deep-ground-462419-k0.cloudfunctions.net/icoraintent-wiremock-fastapi')
+MCP_FUNCTION_URL = os.getenv('MCP_FUNCTION_URL', 'https://{your_link_to_mcp}.cloudfunctions.net/icoraintent-mcp-fastmcp')
+WIREMOCK_FUNCTION_URL = os.getenv('WIREMOCK_FUNCTION_URL', 'https://{your_link_to_wiremock}.cloudfunctions.net/icoraintent-wiremock-fastapi')
 
 def call_mcp_tool(tool_name: str, arguments: dict) -> dict:
     """Call MCP Cloud Function tool via JSON-RPC"""
